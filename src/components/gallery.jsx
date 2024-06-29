@@ -16,11 +16,16 @@ class Gallery extends Component {
   componentDidMount() {
     this.fetchMovies();
   }
+  firstLetterUpper = (string) => {
+    return string.charAt(0).toUpperCase() + string.slice(1);
+  };
 
   render() {
     return (
       <div className="bg-dark">
-        <h2 className="fs-4 mt-4 text-uppercase">{this.props.saga}</h2>
+        <h2 className="fs-4 mt-4 mb-2">
+          {this.firstLetterUpper(this.props.saga)}
+        </h2>
         <Row>
           {this.state.movies.map((movie) => (
             <Col

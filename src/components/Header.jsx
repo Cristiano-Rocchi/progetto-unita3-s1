@@ -5,11 +5,7 @@ const Header = (props) => {
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container-fluid">
             <a className="navbar-brand" href="#">
-              <img
-                height="50px"
-                src="./Netflix-assets/Netflix-assets/assets/netflix_logo.png"
-                alt="logo netflix"
-              />
+              <img height="50px" src="" alt="logo" />
             </a>
             <button
               className="navbar-toggler"
@@ -122,7 +118,7 @@ const Header = (props) => {
           </div>
         </nav>
       </header>
-      <section className="d-flex">
+      <section className="d-flex align-items-center">
         <h1 class="me-4 mb-3">Film</h1>
         <div>
           <button
@@ -144,7 +140,7 @@ const Header = (props) => {
                 Another action
               </a>
             </li>
-            NclassName{" "}
+            NclassName
             <li>
               <a className="dropdown-item" href="#">
                 Something else here
@@ -152,7 +148,7 @@ const Header = (props) => {
             </li>
           </ul>
         </div>
-      </section>{" "}
+      </section>
     </>
   );
 };
