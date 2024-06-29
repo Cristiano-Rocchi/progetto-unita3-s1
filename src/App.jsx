@@ -1,5 +1,6 @@
+import "bootstrap/dist/css/bootstrap.min.css";
 import "./App.css";
-import Gallery from "./components/Gallery";
+import Gallery from "./components/gallery";
 
 function App() {
   return (
