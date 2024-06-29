@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Card, Col, Container, Row } from "react-bootstrap";
+import { Card, CardImg, Col, Container, Row } from "react-bootstrap";
 
 class Gallery extends Component {
   state = { movies: [] };
@@ -19,13 +19,13 @@ class Gallery extends Component {
 
   render() {
     return (
-      <Container fluid>
+      <Container fluid="md">
         <h2 className="my-4">{this.props.saga}</h2>
         <Row>
           {this.state.movies.map((movie) => (
             <Col lg={3} md={6} sm={12} key={movie.imdbID} className="movie">
               <Card className="cardStyle">
-                <img src={movie.Poster} alt={movie.Title} />
+                <CardImg className="rounded" src={movie.poster} />
               </Card>
             </Col>
           ))}
