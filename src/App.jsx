@@ -5,7 +5,7 @@ import Header from "./components/Header";
 
 function App() {
   return (
-    <div className="App">
+    <div className="App bg-dark text-light">
       <Header />
       <Gallery saga="pokemon" />
       <Gallery saga="dragon-ball" />

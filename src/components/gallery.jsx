@@ -19,12 +19,18 @@ class Gallery extends Component {
 
   render() {
     return (
-      <div>
-        <h2 className="fs-4">{this.props.saga}</h2>
+      <div className="bg-dark">
+        <h2 className="fs-4 mt-4 text-uppercase">{this.props.saga}</h2>
         <Row>
           {this.state.movies.map((movie) => (
-            <Col lg={3} md={6} sm={12} key={movie.imdbID} className="movieCol">
-              <Card className="cardStyle h-100">
+            <Col
+              lg={3}
+              md={6}
+              sm={12}
+              key={movie.imdbID}
+              className="movieCol mb-3"
+            >
+              <Card className="cardStyle h-100 border border-0">
                 <CardImg className="rounded h-100" src={movie.Poster} />
               </Card>
             </Col>
