@@ -5,6 +5,7 @@ function App() {
   return (
     <div className="App">
       <Gallery saga="avengers" />
+      <Gallery saga="pokemon" />
     </div>
   );
 }

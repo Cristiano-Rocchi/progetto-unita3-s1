@@ -1,15 +1,16 @@
 import React, { Component } from "react";
+import { Card, Col, Container, Row } from "react-bootstrap";
 
 class Gallery extends Component {
   state = { movies: [] };
 
   fetchMovies = () => {
-    const apiKey = "26b5a229"; // Usa la tua chiave API
+    const apiKey = "26b5a229";
     const saga = this.props.saga;
     fetch(`http://www.omdbapi.com/?s=${saga}&apikey=${apiKey}`)
       .then((response) => response.json())
       .then((moviesObject) => this.setState({ movies: moviesObject.Search }))
-      .catch((error) => console.error("Error fetching movies:", error));
+      .catch((error) => console.log("Error", error));
   };
 
   componentDidMount() {
@@ -18,18 +19,18 @@ class Gallery extends Component {
 
   render() {
     return (
-      <div className="gallery">
-        <h2>{this.props.saga}</h2>
-        <div className="movie-row">
+      <Container fluid>
+        <h2 className="my-4">{this.props.saga}</h2>
+        <Row>
           {this.state.movies.map((movie) => (
-            <div key={movie.imdbID} className="movie">
-              <img src={movie.Poster} alt={movie.Title} />
-              <h3>{movie.Title}</h3>
-              <p>{movie.Year}</p>
-            </div>
+            <Col lg={3} md={6} sm={12} key={movie.imdbID} className="movie">
+              <Card className="cardStyle">
+                <img src={movie.Poster} alt={movie.Title} />
+              </Card>
+            </Col>
           ))}
-        </div>
-      </div>
+        </Row>
+      </Container>
     );
   }
 }
