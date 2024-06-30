@@ -5,9 +5,7 @@ class Gallery extends Component {
   state = { movies: [] };
 
   fetchMovies = () => {
-    const apiKey = "26b5a229";
-    const saga = this.props.saga;
-    fetch(`http://www.omdbapi.com/?s=${saga}&apikey=${apiKey}`)
+    fetch(`http://www.omdbapi.com/?s=${this.props.saga}&apikey=26b5a229`)
       .then((response) => response.json())
       .then((moviesObject) => this.setState({ movies: moviesObject.Search }))
       .catch((error) => console.log("Error", error));

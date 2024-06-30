@@ -55,32 +55,32 @@ const Footer = () => {
         </div>
         <div id="footerLink" className="d-flex">
           <div className="me-5">
-            <h2 className="fs-9">Audio and Subtitles</h2>
-            <h2 className="fs-9">Media Center</h2>
-            <h2 className="fs-9">Privacy</h2>
-            <h2 className="fs-9">Contact Us</h2>
+            <h2 className="fs-7">Audio and Subtitles</h2>
+            <h2 className="fs-7">Media Center</h2>
+            <h2 className="fs-7">Privacy</h2>
+            <h2 className="fs-7">Contact Us</h2>
           </div>
           <div className="me-5">
-            <h2 className="fs-9">Audio Description</h2>
-            <h2 className="fs-9">Investor Relations</h2>
-            <h2 className="fs-9">Legal Notices</h2>
+            <h2 className="fs-7">Audio Description</h2>
+            <h2 className="fs-7">Investor Relations</h2>
+            <h2 className="fs-7">Legal Notices</h2>
           </div>
           <div className="me-5">
-            <h2 className="fs-5">Help Center</h2>
-            <h2 className="fs-9">Jobs</h2>
-            <h2 className="fs-9">Cookie Preferences</h2>
+            <h2 className="fs-7">Help Center</h2>
+            <h2 className="fs-7">Jobs</h2>
+            <h2 className="fs-7">Cookie Preferences</h2>
           </div>
           <div>
-            <h2 className="fs-9">Gift Cards</h2>
-            <h2 className="fs-9">Terms of Use</h2>
-            <h2 className="fs-9">Corporate Information</h2>
+            <h2 className="fs-7">Gift Cards</h2>
+            <h2 className="fs-7">Terms of Use</h2>
+            <h2 className="fs-7">Corporate Information</h2>
           </div>
         </div>
         <div className="mt-3">
-          <button type="button" className="btn btn-outline-secondary fs-9 p-1">
+          <button type="button" className="btn btn-outline-secondary fs-7 p-1">
             Service Code
           </button>
-          <h2 className="fs-9 mt-2">
+          <h2 className="fs-7 mt-2">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               width="11"
