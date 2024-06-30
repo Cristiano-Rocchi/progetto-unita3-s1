@@ -1,11 +1,13 @@
-const Header = (props) => {
+import logo from "../image/netflix_logo.png";
+import avatar from "../image/avatar.png";
+const Header = () => {
   return (
     <>
       <header>
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container-fluid">
             <a className="navbar-brand" href="#">
-              <img height="50px" src="/netflix_logo.png" alt="logo" />
+              <img height="50px" src={logo} alt="logo" />
             </a>
             <button
               className="navbar-toggler"
@@ -95,11 +97,7 @@ const Header = (props) => {
                   data-bs-toggle="dropdown"
                   aria-expanded="false"
                 >
-                  <img
-                    width="20px"
-                    src="./Netflix-assets/Netflix-assets/assets/avatar.png"
-                    alt=""
-                  />
+                  <img width="20px" src={avatar} alt="" />
                 </button>
                 <ul className="dropdown-menu dropdown-menu-dark dropdown-menu-end">
                   <li>
