@@ -1,7 +1,8 @@
 import "bootstrap/dist/css/bootstrap.min.css";
-import "./App.css";
+import "./custom.scss";
 import Gallery from "./components/gallery";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Gallery saga="pokemon" />
       <Gallery saga="dragon-ball" />
       <Gallery saga="harry-potter" />
+      <Footer />
     </div>
   );
 }

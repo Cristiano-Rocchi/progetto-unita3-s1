@@ -5,7 +5,7 @@ const Header = (props) => {
         <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
           <div className="container-fluid">
             <a className="navbar-brand" href="#">
-              <img height="50px" src="" alt="logo" />
+              <img height="50px" src="/netflix_logo.png" alt="logo" />
             </a>
             <button
               className="navbar-toggler"
